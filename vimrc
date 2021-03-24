@@ -102,13 +102,14 @@ Plug 'koz4k/tmuxline.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
-Plug 'w0rp/ale'
-Plug 'davidhalter/jedi-vim'
 Plug 'raichoo/purescript-vim'
 Plug 'FrigoEU/psc-ide-vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-dispatch'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'leafgarland/typescript-vim'
+Plug 'davidhalter/jedi-vim'
+"Plug 'zxqfl/tabnine-vim'
 
 call plug#end()
 
@@ -152,14 +153,6 @@ if 'VIRTUAL_ENV' in os.environ:
     with open(activate_this, 'r') as f:
         exec(f.read(), {'__file__': activate_this})
 EOF
-
-" use the current virtualenv in ale's pylint
-if !empty($VIRTUAL_ENV)
-    let pylint_path = $VIRTUAL_ENV . '/bin/pylint'
-    if filereadable(pylint_path)
-        let g:ale_python_pylint_executable = pylint_path
-    endif
-endif
 
 let purescript_indent_if = 2
 let purescript_indent_case = 2

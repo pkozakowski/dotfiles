@@ -1,12 +1,12 @@
 [submodule "vim/plugins/promptline.vim"]
 	path = vim/plugins/promptline.vim
-	url = git@github.com:koz4k/promptline.vim.git
+	url = https://github.com/koz4k/promptline.vim.git
 [submodule "vim/plugins/tmuxline.vim"]
 	path = vim/plugins/tmuxline.vim
-	url = git@github.com:koz4k/tmuxline.vim.git
+	url = https://github.com/koz4k/tmuxline.vim.git
 [submodule "vim/plugins/vim-airline"]
 	path = vim/plugins/vim-airline
-	url = git@github.com:koz4k/vim-airline.git
+	url = https://github.com/koz4k/vim-airline.git
 [submodule "vim/plugins/vim-airline-themes"]
 	path = vim/plugins/vim-airline-themes
 	url = git@github.com:vim-airline/vim-airline-themes.git
@@ -30,7 +30,7 @@
 	url = git@github.com:purescript-contrib/purescript-vim.git
 [submodule "zprezto"]
 	path = zprezto
-	url = git@github.com:koz4k/prezto.git
+	url = https://github.com/koz4k/prezto.git
 [submodule "vim/plugins/vim-easymotion"]
 	path = vim/plugins/vim-easymotion
 	url = git@github.com:easymotion/vim-easymotion.git
