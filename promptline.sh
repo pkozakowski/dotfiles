@@ -165,10 +165,19 @@ function __promptline {
   fi
   local wrap="$noprint$esc" end_wrap="$end_esc$end_noprint"
   local space=" "
-  local sep=""
-  local rsep=""
-  local alt_sep=""
-  local alt_rsep=""
+
+  if [ -z $NO_ARROWS ]; then
+      local sep=""
+      local rsep=""
+      local alt_sep=""
+      local alt_rsep=""
+  else
+      local sep=""
+      local rsep=""
+      local alt_sep=">"
+      local alt_rsep="<"
+  fi
+
   local reset="${wrap}0${end_wrap}"
   local reset_bg="${wrap}49${end_wrap}"
   local a_fg="${wrap}38;5;17${end_wrap}"
